@@ -89,3 +89,14 @@ function contare(num) {
 console.log(contare(9));
 console.log(contare(99));
 
+// ESERCIZIO 6
+console.log(`ESERCIZIO 6`);
+
+
+let array = ["Donato", "Nicola", ["Annalisa", "Paola"], "Alessandro", ["Roberto", "Valerio", "Francesco"]];
+
+console.log(array);
+
+console.log(array[2][0]);
+console.log(array[4][2]);
+
