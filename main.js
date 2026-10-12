@@ -70,3 +70,22 @@ function numero(n) {
 
 numero(30);
 
+// ESERCIZIO 5
+console.log(`ESERCIZIO 5`);
+
+
+function contare(num) {
+    let stringa = String(num);
+    
+    let quantita = stringa.length;
+    
+    if (quantita === 1) {
+        return quantita + " cifra";
+    } else {
+        return quantita + " cifre";
+    }
+}
+
+console.log(contare(9));
+console.log(contare(99));
+
