@@ -21,3 +21,31 @@ for (let i = 0; i <=10; i++) {
     console.log(`al ciclo n° ${i} ho moltiplicato il numero per ${i}`); 
 }
 
+// ESERCIZIO 3
+console.log(`ESERCIZIO 3`);
+
+function simulazione(numberOfShots) {
+    let giocatore1 = 0;
+    let giocatore2 = 0;
+
+    for (let i = 0; i < numberOfShots; i++) {
+        let tiro1 = Math.floor(Math.random() * (6 + 1 - 1) + 1);
+        giocatore1 += tiro1;
+
+        let tiro2 = Math.floor(Math.random() * (6 + 1 - 1) + 1);
+        giocatore2 += tiro2;
+    }
+
+    console.log(`Punteggio finale del giocatore 1: ${giocatore1}`);
+    console.log(`Punteggio finale del giocatore 2: ${giocatore2}`);
+
+    if (giocatore1 > giocatore2) {
+        console.log(`Il giocatore 1 ha vinto la partita!`);
+    } else if (giocatore2 > giocatore1) {
+        console.log(`Il giocatore 2 ha vinto la partita!`);
+    } else {
+        console.log(`La partita è in parità!`);
+    }
+}
+
+simulazione(5);
